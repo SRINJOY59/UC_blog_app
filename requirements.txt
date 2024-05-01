@@ -7,3 +7,4 @@ chromadb
 pdfkit
 bs4
 IPython
+pypdf2
