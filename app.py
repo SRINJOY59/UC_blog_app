@@ -98,7 +98,7 @@ import streamlit as st
 
 st.title('Blog Generator from PDF Content')
 
-uploaded_file = st.file_uploader("Choose a PDF file", type="pdf")
+# uploaded_file = st.file_uploader("Choose a PDF file", type="pdf")
 
 
 input_text = st.text_area("Enter your text here", height=300)
@@ -108,14 +108,14 @@ prompt = st.text_input("Enter the blog topic")
 category = st.selectbox("Choose the blog category", ['beauty', 'happy-homes', 'interiors', 'wellness', 'lifestyle', 'uc impact'])
 
 if st.button('Generate Blog'):
-    if uploaded_file is not None and prompt:
-        pdf_path = "uploaded_pdf.pdf"  
-        with open(pdf_path, "wb") as f:
-            f.write(uploaded_file.read())
-        blog_markdown = write_blog(pdf_path, prompt, category)
+    # if uploaded_file is not None and prompt:
+    #     pdf_path = "uploaded_pdf.pdf"  
+    #     with open(pdf_path, "wb") as f:
+    #         f.write(uploaded_file.read())
+    #     blog_markdown = write_blog(pdf_path, prompt, category)
         
-        st.markdown(blog_markdown, unsafe_allow_html=True)
-    elif input_text is not None and prompt:
+    #     st.markdown(blog_markdown, unsafe_allow_html=True)
+    if input_text is not None and prompt:
         blog_response = generate_blog(prompt, category, input_text)
         st.markdown(blog_response, unsafe_allow_html=True)
     else:
