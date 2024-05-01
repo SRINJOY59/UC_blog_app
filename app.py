@@ -24,7 +24,7 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
 warnings.filterwarnings("ignore")
 
-os.environ['GOOGLE_API_KEY'] = 'AIzaSyCTjKjVn1IlY1e9hwMh7NzWmWsHXSO9KoI'
+os.environ['GOOGLE_API_KEY'] = 'AIzaSyDocdP-wpXWjCLZO0SrHyxytbQZiI3-dLo'
 
 def to_markdown(text):
     text = text.replace('.', '*')
