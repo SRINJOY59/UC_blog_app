@@ -1,6 +1,5 @@
 import os
 import pdfkit
-from docx import Document
 import pathlib
 import textwrap
 import requests
