@@ -4,3 +4,4 @@ langchain_community
 langchain-google-genai
 google-generativeai
 chromadb
+pdfkit
